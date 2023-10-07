@@ -25,7 +25,6 @@ class _Quiz extends State<Quiz> {
 
     if (selectedAnswers.length == questions.length) {
       setState(() {
-        
         activeScreen = 'results-screen';
       });
     }
@@ -51,8 +50,8 @@ class _Quiz extends State<Quiz> {
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 17, 37, 212),
-            Color.fromARGB(255, 12, 30, 145),
+            Color.fromARGB(255, 47, 64, 220),
+            Color.fromARGB(255, 0, 27, 199),
           ])),
           child: screenWidget,
         ),

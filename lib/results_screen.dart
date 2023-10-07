@@ -15,8 +15,8 @@ class ResultsScreen extends StatelessWidget {
         {
           'question_index': i,
           'question': questions[i].text,
+          'user_answer': chosenAnswers[i],
           'correct_answer': questions[i].answers[0],
-          'user_answer': chosenAnswers[i]
         },
       );
     }
@@ -48,9 +48,9 @@ class ResultsScreen extends StatelessWidget {
               height: 30,
             ),
             TextButton(
-              onPressed: (){},
-              child: const Text('Restart Quiz!'), ),
-            
+              onPressed: (() {}),
+              child: const Text('Restart Quiz!'),
+            ),
           ],
         ),
       ),
